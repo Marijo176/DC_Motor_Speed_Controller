@@ -6,7 +6,9 @@
 	(paper "A4")
 	(title_block
 		(title "DC Motor Speed Controller")
-		(date "2026-10-13")
+		(date "2026-11-21")
+		(rev "1.0")
+		(company "Marijo Maric")
 	)
 	(lib_symbols
 		(symbol "Connector:Screw_Terminal_01x02"
@@ -1788,8 +1790,8 @@
 		)
 	)
 	(rectangle
-		(start 78.74 127)
-		(end 100.33 143.51)
+		(start 43.18 73.66)
+		(end 64.77 90.17)
 		(stroke
 			(width 0)
 			(type default)
@@ -1799,15 +1801,57 @@
 		)
 		(uuid "6e2f9c5f-3956-4198-b8eb-bba8adeecf11")
 	)
+	(rectangle
+		(start 80.01 50.8)
+		(end 223.52 123.19)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "ea049325-389e-48a7-a76f-0bd8d21e6ce1")
+	)
+	(text "DC MOTOR SPEED CONTROLLER"
+		(exclude_from_sim no)
+		(at 149.352 52.832 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "0dff043c-be93-488c-a934-61591aadfb87")
+	)
+	(text "INPUT: 5-12V DC"
+		(exclude_from_sim no)
+		(at 88.9 97.282 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "256a79aa-35d1-48cf-b1ac-40c3cfe18702")
+	)
 	(text "Mounting holes"
 		(exclude_from_sim no)
-		(at 90.17 128.524 0)
+		(at 54.61 75.184 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
 		(uuid "318d9abe-218d-4da5-bd3b-257400d32ddb")
+	)
+	(text "MOTOR: up to 12V DC"
+		(exclude_from_sim no)
+		(at 208.534 80.01 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "5b234a77-4b6f-4462-87ee-15e4f313e4b8")
 	)
 	(junction
 		(at 114.3 110.49)
@@ -2725,7 +2769,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10 nF"
+		(property "Value" "10nF"
 			(at 130.81 107.9499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2807,7 +2851,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100 nF"
+		(property "Value" "100nF"
 			(at 101.6 88.8999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3051,7 +3095,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Q_NMOS_GDS"
+		(property "Value" "IRLZ44NS"
 			(at 184.15 92.7099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3073,7 +3117,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.alldatasheet.com/view.jsp?Searchword=IRLZ44NS%20DATASHEET&msclkid=40f10df48c5a1962fe9766f5298d9f47"
 			(at 177.8 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -3258,7 +3302,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10000R"
+		(property "Value" "10k"
 			(at 173.99 104.1399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3339,7 +3383,7 @@
 				)
 			)
 		)
-		(property "Value" "10000"
+		(property "Value" "10k"
 			(at 114.3 86.36 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3456,7 +3500,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SS14"
+		(property "Value" "SS34"
 			(at 182.88 80.0099 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3547,10 +3591,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "998c9195-e5a5-4978-8e3a-9455a3e3fd52")
 		(property "Reference" "D1"
-			(at 107.95 80.0099 90)
+			(at 107.696 77.47 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3561,7 +3604,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 107.95 82.5499 90)
+			(at 107.696 79.502 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3768,7 +3811,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1000r"
+		(property "Value" "1k"
 			(at 115.57 72.3899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3837,7 +3880,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "df8eb36e-421a-4ebd-9248-4f3da8e86b6e")
 		(property "Reference" "#FLG01"
 			(at 151.13 59.055 0)
@@ -3851,7 +3893,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 151.13 55.88 0)
+			(at 151.384 57.404 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3907,7 +3949,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 82.55 139.7 0)
+		(at 46.99 86.36 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3918,7 +3960,7 @@
 		(fields_autoplaced yes)
 		(uuid "e039adc5-2aad-468c-91b6-a758fcbc855a")
 		(property "Reference" "H2"
-			(at 85.09 138.4299 0)
+			(at 49.53 85.0899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3929,7 +3971,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 85.09 140.9699 0)
+			(at 49.53 87.6299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3940,7 +3982,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.1mm"
-			(at 82.55 139.7 0)
+			(at 46.99 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3951,7 +3993,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 82.55 139.7 0)
+			(at 46.99 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3962,7 +4004,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 82.55 139.7 0)
+			(at 46.99 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4064,7 +4106,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 82.55 133.35 0)
+		(at 46.99 80.01 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4075,7 +4117,7 @@
 		(fields_autoplaced yes)
 		(uuid "fcfa2ee0-9410-4741-8b7b-b1860ffb3c71")
 		(property "Reference" "H1"
-			(at 85.09 132.0799 0)
+			(at 49.53 78.7399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4086,7 +4128,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 85.09 134.6199 0)
+			(at 49.53 81.2799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4097,7 +4139,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.1mm"
-			(at 82.55 133.35 0)
+			(at 46.99 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4108,7 +4150,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 82.55 133.35 0)
+			(at 46.99 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4119,7 +4161,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 82.55 133.35 0)
+			(at 46.99 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
